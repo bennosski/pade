@@ -7,3 +7,12 @@ Useful for analytic continuation of complex functions such as single particle re
 
 Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, J. Low Temp. Phys. 29,
 179 (1977).](https://link.springer.com/article/10.1007%2FBF00655090)
+
+Example usage:
+```
+# fit the pade approximant at points 'zs' with values 'us'
+p = pade.fit(zs, us)    
+
+# evaluate the pade approximant at point 'z'
+p(z)
+```
