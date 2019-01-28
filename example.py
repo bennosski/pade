@@ -10,6 +10,8 @@ us = f(zs)
 print('original f')
 print(f(xs))
 
+p = pade.fit(zs, us)
+
 print('pade approximant')
-print([pade.pade(z, zs, us) for z in xs])
+print([p(z) for z in xs])
 
