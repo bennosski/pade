@@ -8,10 +8,12 @@ zs = linspace(0, 20, 20)*1j
 us = f(zs)
 
 print('original f')
-print(f(xs))
+print(['%1.4f %1.4f'%(f(x).real, f(x).imag) for x in f(xs)])
 
 p = pade.fit(zs, us)
 
-print('pade approximant')
-print([p(z) for z in xs])
+print('\npade approximant')
+print(['%1.4f %1.4f'%(p(x).real, p(x).imag) for x in xs])
 
+print('\ndifference')
+print(['%1.4f %1.4f'%(f(x).real-p(x).real, f(x).imag-p(x).imag) for x in xs])

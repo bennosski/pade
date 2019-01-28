@@ -1,7 +1,5 @@
-
 from numpy import *
 from functools import lru_cache
-
 
 class pade:
     def __init__(self, a, zs, us):
@@ -26,7 +24,9 @@ def fit(zs, us, verbose=False):
     '''
     Computes the coefficients for the continued fraction representation of the Pade approximant
 
-    verbose prints cache info
+    - zs : the complex points and which the function is defined
+    - us : the values of the complex function at the points zs
+    - verbose : prints cache info
     '''
     
     @lru_cache(maxsize=None)
