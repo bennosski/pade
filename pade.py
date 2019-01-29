@@ -33,10 +33,6 @@ def fit(zs, us, verbose=False):
         if p==0: return us[n]
         return (g(p-1, p-1) - g(p-1, n))/((zs[n]-zs[p-1])*g(p-1, n))
 
-    a = [g(0,0)]
-    for n,zn in enumerate(zs[:-1]):    
-        a.append(g(n+1,n+1))
-        
     if verbose: print(g.cache_info())
     
-    return pade(a, zs, us)
+    return pade([g(i,i) for i in range(len(zs))], zs, us)
