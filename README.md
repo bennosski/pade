@@ -11,8 +11,10 @@ Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, 
 Example usage:
 ```
 # fit the pade approximant at points 'zs' with values 'us'
+
 p = pade.fit(zs, us)    
 
 # evaluate the pade approximant at point 'z'
+
 p(z)
 ```
