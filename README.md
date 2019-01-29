@@ -10,6 +10,8 @@ Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, 
 
 Example usage:
 ```ruby
+import pade
+
 # fit the pade approximant at points 'zs' with values 'us'
 
 p = pade.fit(zs, us)    
