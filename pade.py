@@ -1,4 +1,3 @@
-from numpy import *
 from functools import lru_cache
 
 class pade:
