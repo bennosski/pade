@@ -9,7 +9,7 @@ Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, 
 179 (1977).](https://link.springer.com/article/10.1007%2FBF00655090)
 
 Example usage:
-```
+```ruby
 # fit the pade approximant at points 'zs' with values 'us'
 
 p = pade.fit(zs, us)    
