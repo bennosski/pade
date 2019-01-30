@@ -17,3 +17,6 @@ print(['%1.4f %1.4f'%(p(x).real, p(x).imag) for x in xs])
 
 print('\ndifference')
 print(['%1.4f %1.4f'%(f(x).real-p(x).real, f(x).imag-p(x).imag) for x in xs])
+
+
+print(p(xs))

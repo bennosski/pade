@@ -5,20 +5,23 @@ class pade:
         self.a  = a
         self.zs = zs
         self.us = us
-        
+                
     def __call__(self, z):
-        An1 = 0.0
-        An  = self.a[0]
-        Bn1 = 1.0
-        Bn  = 1.0
-    
-        for n,zn in enumerate(self.zs[:-1]):    
-            An1, An = An, An + (z-zn)*self.a[n+1]*An1
-            Bn1, Bn = Bn, Bn + (z-zn)*self.a[n+1]*Bn1
+        try:
+            return [self.__call__(x) for x in z]
+        except TypeError:
+            An1 = 0.0
+            An  = self.a[0]
+            Bn1 = 1.0
+            Bn  = 1.0
 
-        return An/Bn
+            for n,zn in enumerate(self.zs[:-1]):    
+                An1, An = An, An + (z-zn)*self.a[n+1]*An1
+                Bn1, Bn = Bn, Bn + (z-zn)*self.a[n+1]*Bn1
 
+            return An/Bn
 
+        
 def fit(zs, us, verbose=False):
     '''
     Computes the coefficients for the continued fraction representation of the Pade approximant
