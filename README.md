@@ -1,9 +1,9 @@
 # pade
-Computes the N-point [Pade approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant) for a function in the complex plane. 
+Computes the N-point [Pade approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant) of order [(N-1)//2, N//2] for a function in the complex plane.
 
-The Pade approximant often gives better approximation of the function than truncating its Taylor series, and it may still work where the Taylor series does not converge.
+Unlike the Scipy.misc.pade method which computes the Pade approximant for a function given its Taylor series coefficients, this code finds the Pade approximant which interpolates a set of N points specified in the complex plane.
 
-Useful for analytic continuation of complex functions such as single particle response functions in condensed matter physics computed on the imaginary axis.
+Useful for analytic continuation of complex functions from the imaginary axis onto the real axis such as for single particle response functions in condensed matter physics. The Pade approximant is perhaps the simplest approximation which can simulate the non-analyticies of complex functions.
 
 Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, J. Low Temp. Phys. 29,
 179 (1977).](https://link.springer.com/article/10.1007%2FBF00655090)
