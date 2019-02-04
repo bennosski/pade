@@ -1,8 +1,9 @@
+# pade
+
 <h1 align="center">
-  <img src="padefig.png" width="400px" alt="pade">
+  <img src="padefig.png" width="300px" alt="pade">
 </h1>
 
-# pade
 Computes the N-point [Pade approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant) of order [(N-1)//2, N//2] for a function in the complex plane.
 
 Unlike the Scipy.misc.pade method which computes the Pade approximant for a function given its Taylor series coefficients, this code finds the Pade approximant which interpolates a set of N points specified in the complex plane.
