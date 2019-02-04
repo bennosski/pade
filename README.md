@@ -1,4 +1,6 @@
-![Alt text](https://raw.githubusercontent.com/bennosski/pade/master/padefig.png =100x20)
+<h1 align="center">
+  <img src="padefig.png" width="400px" alt="pade">
+</h1>
 
 # pade
 Computes the N-point [Pade approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant) of order [(N-1)//2, N//2] for a function in the complex plane.
