@@ -13,7 +13,7 @@ Useful for analytic continuation of complex functions from the imaginary axis on
 Calculated following the algorithm provided in [H. J. Vidberg and J. W. Serene, J. Low Temp. Phys. 29,
 179 (1977).](https://link.springer.com/article/10.1007%2FBF00655090)
 
-Example usage:
+Example:
 ```ruby
 import pade
 
