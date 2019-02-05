@@ -1,4 +1,4 @@
-# padé
+# pade
 
 <h1 align="center">
   <img src="padefig.png" width="300px" alt="pade">
